@@ -30,14 +30,14 @@
   &lt;add key="__TCA:CREATED_BY" value="3" type="System.Int32,mscorlib" /&gt;
   &lt;add key="__TCA:CREATED_ON" value="2023-02-10 18:42:32" type="System.DateTime,mscorlib" /&gt;
   &lt;add key="__TCA:V1_GAME_ID" value="" type="System.String,mscorlib" /&gt;
-  &lt;add key="__TCA:NOTES" value="" type="System.String,mscorlib" /&gt;
+  &lt;add key="__TCA:NOTES" value="Made by werewolfboy13 at&amp;#xA;https://github.com/afocommunity/OHD-TCADMIN&amp;#xA;You can get updates there." type="System.String,mscorlib" /&gt;
   &lt;add key="d3b2aa93-7e2b-4e0d-8080-67d14b2fa8a9:FileManager" value="&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-16&amp;quot;?&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;FileManagerConfig xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;ServerId&amp;gt;0&amp;lt;/ServerId&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;EditPatterns&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;string&amp;gt;*.cfg&amp;lt;/string&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;string&amp;gt;*.txt&amp;lt;/string&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;string&amp;gt;*.ini&amp;lt;/string&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/EditPatterns&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;MaxEditSize&amp;gt;102400&amp;lt;/MaxEditSize&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;EnableDecompress&amp;gt;true&amp;lt;/EnableDecompress&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;EnableCompress&amp;gt;true&amp;lt;/EnableCompress&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;MaxCompressSize&amp;gt;52428800&amp;lt;/MaxCompressSize&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;EnableUpload&amp;gt;true&amp;lt;/EnableUpload&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;EnableDownload&amp;gt;true&amp;lt;/EnableDownload&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;DefaultFileName&amp;gt;custom.cfg&amp;lt;/DefaultFileName&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;WriteBom&amp;gt;false&amp;lt;/WriteBom&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;/FileManagerConfig&amp;gt;" type="TCAdmin.SDK.Web.FileManager.FileManagerConfig,TCAdmin.SDK.Web" /&gt;
   &lt;add key="__TCA:MODIFIED_BY" value="3" type="System.Int32,mscorlib" /&gt;
-  &lt;add key="__TCA:MODIFIED_ON" value="2023-02-17 20:52:06" type="System.DateTime,mscorlib" /&gt;
+  &lt;add key="__TCA:MODIFIED_ON" value="2023-02-18 02:26:08" type="System.DateTime,mscorlib" /&gt;
   &lt;add key="__FSRM:DEFAULT_QUOTA" value="0" type="System.String,mscorlib" /&gt;
   &lt;add key="__FSRM:APPLY_QUOTA_TO_ALL_SERVICES" value="false" type="System.String,mscorlib" /&gt;
   &lt;add key="__TCA:STEAM_API_GAME_VERSION" value=":1000" type="System.String,mscorlib" /&gt;
-  &lt;add key="__TCA:STEAM_API_GAME_VERSION_UPDATE" value="2023-02-17 20:52:07" type="System.DateTime,mscorlib" /&gt;
+  &lt;add key="__TCA:STEAM_API_GAME_VERSION_UPDATE" value="2023-02-18 02:26:10" type="System.DateTime,mscorlib" /&gt;
 &lt;/values&gt;</app_data>
     <rcon_commands>["listplayers"]</rcon_commands>
     <enable_community_images>1</enable_community_images>
@@ -192,7 +192,7 @@
   &lt;add key="__TCA:CREATED_BY" value="3" type="System.Int32,mscorlib" /&gt;
   &lt;add key="__TCA:CREATED_ON" value="2023-02-10 18:43:45" type="System.DateTime,mscorlib" /&gt;
   &lt;add key="__TCA:MODIFIED_BY" value="3" type="System.Int32,mscorlib" /&gt;
-  &lt;add key="__TCA:MODIFIED_ON" value="2023-02-17 20:52:07" type="System.DateTime,mscorlib" /&gt;
+  &lt;add key="__TCA:MODIFIED_ON" value="2023-02-18 02:26:10" type="System.DateTime,mscorlib" /&gt;
 &lt;/values&gt;</app_data>
   </tc_game_mail_templates>
   <tc_game_steam_config>
@@ -513,6 +513,79 @@ Password=$[RConPassword]
   &lt;add key="__TCA:MODIFIED_ON" value="2023-02-12 18:31:11" type="System.DateTime,mscorlib" /&gt;
 &lt;/values&gt;</app_data>
   </tc_custom_variables>
+  <tc_game_scripts>
+    <game_id>163</game_id>
+    <script_id>1</script_id>
+    <mod_id>0</mod_id>
+    <update_id>0</update_id>
+    <operating_system>2</operating_system>
+    <script_engine_id>3</script_engine_id>
+    <description>After Install Mods</description>
+    <script_contents>xcopy /S /Y /I %cd%\steamapps\workshop\content\736590 %cd%\HarshDoorstop\Mods
+exit</script_contents>
+    <service_event>32</service_event>
+    <execute_order>0</execute_order>
+    <ignore_errors>1</ignore_errors>
+    <server_owner_access>0</server_owner_access>
+    <subadmin_access>0</subadmin_access>
+    <reseller_access>0</reseller_access>
+    <user_access>0</user_access>
+    <stop_service>0</stop_service>
+    <allow_scheduling>0</allow_scheduling>
+    <display_name />
+    <image_url />
+    <prompt_variables>0</prompt_variables>
+    <exec_as_service_user>0</exec_as_service_user>
+    <app_data>&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;values&gt;
+  &lt;add key="__TCA:CREATED_BY" value="3" type="System.Int32,mscorlib" /&gt;
+  &lt;add key="__TCA:CREATED_ON" value="2023-02-18 01:52:23" type="System.DateTime,mscorlib" /&gt;
+  &lt;add key="__TCA:MODIFIED_BY" value="3" type="System.Int32,mscorlib" /&gt;
+  &lt;add key="__TCA:MODIFIED_ON" value="2023-02-18 02:18:44" type="System.DateTime,mscorlib" /&gt;
+&lt;/values&gt;</app_data>
+    <output_filters />
+    <custom_prompt />
+    <execute_in_popup>1</execute_in_popup>
+    <sched_tasks_interval_limit>0</sched_tasks_interval_limit>
+  </tc_game_scripts>
+  <tc_game_scripts>
+    <game_id>163</game_id>
+    <script_id>2</script_id>
+    <mod_id>0</mod_id>
+    <update_id>0</update_id>
+    <operating_system>0</operating_system>
+    <script_engine_id>3</script_engine_id>
+    <description>After Uninstall Mods</description>
+    <script_contents>for /d %%i in ("%cd%\HarshDoorstop\Mods\*") 
+        @RD /s /Q %%i
+    )
+)
+exit</script_contents>
+    <service_event>33</service_event>
+    <execute_order>0</execute_order>
+    <ignore_errors>1</ignore_errors>
+    <server_owner_access>0</server_owner_access>
+    <subadmin_access>0</subadmin_access>
+    <reseller_access>0</reseller_access>
+    <user_access>0</user_access>
+    <stop_service>0</stop_service>
+    <allow_scheduling>0</allow_scheduling>
+    <display_name />
+    <image_url />
+    <prompt_variables>0</prompt_variables>
+    <exec_as_service_user>0</exec_as_service_user>
+    <app_data>&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;values&gt;
+  &lt;add key="__TCA:CREATED_BY" value="3" type="System.Int32,mscorlib" /&gt;
+  &lt;add key="__TCA:CREATED_ON" value="2023-02-18 02:05:33" type="System.DateTime,mscorlib" /&gt;
+  &lt;add key="__TCA:MODIFIED_BY" value="3" type="System.Int32,mscorlib" /&gt;
+  &lt;add key="__TCA:MODIFIED_ON" value="2023-02-18 02:11:58" type="System.DateTime,mscorlib" /&gt;
+&lt;/values&gt;</app_data>
+    <output_filters />
+    <custom_prompt />
+    <execute_in_popup>1</execute_in_popup>
+    <sched_tasks_interval_limit>0</sched_tasks_interval_limit>
+  </tc_game_scripts>
   <tc_game_permissions>
     <game_id>163</game_id>
     <service_id>0</service_id>
